@@ -1,0 +1,81 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  color: #333;
+}
+.header {
+  background-color: #007bff;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+}
+.header h3 {
+  margin: 0;
+  font-size: 24px;
+}
+#image-in {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  max-width: 300px;
+}
+#clear-circle {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#clear-circle:hover {
+  background-color: #a71d2a;
+}
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+#preview-container {
+  position: relative;
+  display: inline-block;
+}
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+  border: none;
+}
+#image-out {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+#button-container {
+  margin-top: 20px;
+}
+#draw-circle {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#draw-circle:hover {
+  background-color: #0056b3;
+}
