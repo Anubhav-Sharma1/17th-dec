@@ -178,7 +178,7 @@ function clearSelectedCircle() {
       } else {
         reject("Selected circle not found.");
       }
-    }, 3000); // Delay of 6 seconds
+    }, 3000); // Delay of 3 seconds
   });
 }
 
