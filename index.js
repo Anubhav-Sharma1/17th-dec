@@ -157,22 +157,24 @@ canvas.addEventListener("mouseleave", function () {
   isDragging = false;
 });
 
-// Clear selected circle after 6 seconds using promises
+// Clear selected circle after 3 seconds using promises
 function clearSelectedCircle() {
   return new Promise((resolve, reject) => {
     if (!selectedCircle) {
       reject("No circle is selected.");
       return;
     }
+    let var1 =selectedCircle;
+    selectedCircle=null;
 
     // Delay the action without notifying user
     setTimeout(() => {
-      const idToDelete = selectedCircle.id;
+      const idToDelete = var1.id;
 
       // Remove the selected circle from the map
       if (circlesMap.has(idToDelete)) {
         circlesMap.delete(idToDelete);
-        selectedCircle = null;
+        var1 = null;
         redrawCanvas();
         resolve("Circle cleared successfully.");
       } else {
